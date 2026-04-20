@@ -1,0 +1,31 @@
+{
+  "name": "flyraos-sdk",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "tsc",
+    "test": "vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.4"
+  },
+  "dependencies": {
+    "@stacks/network": "^7.3.1",
+    "@stacks/transactions": "^7.4.0",
+    "@stacks/wallet-sdk": "^7.2.0"
+  }
+}
